@@ -29,14 +29,14 @@ namespace parameters {
   const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 30;
 
   // MONEY_SUPPLY - total number coins to be generated
-  const uint64_t MONEY_SUPPLY                                  = UINT64_C(858986905600000000);
+  const uint64_t MONEY_SUPPLY                                  = UINT64_C(85898690560);
   const uint32_t MANDATORY_TRANSACTION                         = 0;
   const uint32_t KILL_HEIGHT                                   = 0;
   const uint64_t TAIL_EMISSION_REWARD                          = 0;
   const size_t CRYPTONOTE_COIN_VERSION                         = 0;
   const bool ZAWY_DIFFICULTY_V2                          	     = 0;
   const unsigned EMISSION_SPEED_FACTOR                         = 18;
-  const uint64_t GENESIS_BLOCK_REWARD                          = 10000;
+  const uint64_t GENESIS_BLOCK_REWARD                          = 1000000;
   static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
   const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 0.1;
@@ -109,8 +109,8 @@ namespace parameters {
   const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(2640));
 
 
-const char     CRYPTONOTE_NAME[]                             = "Mushi";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001904e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121013f10b20e46406abdcedb02efdce78bc954cff022b67ebab10a8b7eec1954e74e";
+const char     CRYPTONOTE_NAME[]                             = "DemocratiCoin";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1515479625;
 
@@ -125,8 +125,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  500;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              = 17236;
-const int      RPC_DEFAULT_PORT                              = 18236;
+const int      P2P_DEFAULT_PORT                              = 1995;
+const int      RPC_DEFAULT_PORT                              = 1996;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -144,8 +144,8 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
 const std::initializer_list<const char*> SEED_NODES = {
-   "194.135.91.245:17236",
-   "80.208.228.138:17236"
+   "45.76.9.174:1995",
+   "45.76.9.174:1995"
 };
 
 struct CheckpointData {
